@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body {
+	font-family: 'Abril Fatface', cursive;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1018%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(228%2c 174%2c 197%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c208 C 96%2c177.8 288%2c59.4 480%2c57 C 672%2c54.6 768%2c195.4 960%2c196 C 1152%2c196.6 1344%2c87.2 1440%2c60L1440 560L0 560z' fill='rgba(250%2c 217%2c 230%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c332 C 57.6%2c366.2 172.8%2c496.6 288%2c503 C 403.2%2c509.4 460.8%2c362.4 576%2c364 C 691.2%2c365.6 748.8%2c505.6 864%2c511 C 979.2%2c516.4 1036.8%2c391 1152%2c391 C 1267.2%2c391 1382.4%2c487 1440%2c511L1440 560L0 560z' fill='rgba(228%2c 174%2c 197%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1018'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+	margin: 40px auto;
+	min-height: 90vh;
+	width: 400px;
+	background-color: white;
+	border-radius: 35px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+	color: #243D25;
+	font-weight: bolder;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-container {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.container {
+	display: flex;
+	justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.daytime {
+	display: flex;
+	justify-content: center;
+}
+.date {
+	font-family: 'Abril Fatface', cursive;
+	border: none;
+	width: 200px;
+	color: #82A284;
+	font-size: 25px;
+}
+.crossed {
+	text-decoration: line-through 2px #243D25;
+	color: #243D25;
+}
+li {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #243D25;
+}
+.input-task {
+	flex: 1 auto;
+	margin: 20px 20px 10px 20px;
+	padding: 7px;
+}
+input:focus { 
+    outline: none !important;
+    border-color: none;
+    box-shadow: 0 0 10px #82A284;
+}
+.add-btn, .delete-btn {
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	padding: 13px 50px;
+	margin-top: 15px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #82A284 0%, #243D25 51%, #82A284 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	transition: .5s;
+}
+.add-btn:hover {
+	background-position: right center;
+}
+.delete-btn {
+	padding: 13px 32px;
+	margin-top: 0;
+	background-image: linear-gradient(to right, #fff 0%, #E4AEC5 51%, #fff 100%);
+	color:#243D25;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+.delete-btn:hover {
+	background-position: right center;
 }

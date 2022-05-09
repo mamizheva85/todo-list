@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Datetime from './Datetime';
+import { TodoList } from './TodoList';
+import image from './Girl.jpg'
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return (
+<div>
+	<div className="app">
+		<div className="main-container">
+			<h1>To do list</h1>
+			
+		</div>
+	<Datetime />
+	<TodoList />
+	<div className="main-container">
+	<img src ={ image } width="265" alt="girl"/>
+	</div>
+	</div>
+</div>
+);
 }
 
 export default App;
